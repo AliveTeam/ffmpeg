@@ -1,0 +1,21 @@
+version: 1.0.{build}
+
+image: Visual Studio 2017
+
+platform: 
+ - x86
+ - x64
+
+configuration:
+ - Debug
+
+clone_folder: c:\ffmpeg
+
+build_script:
+ - cd 3rdParty
+ - cd FFMpeg
+ - ./configure --toolchain=msvc
+ - make
+ - make install
+
+test: off
