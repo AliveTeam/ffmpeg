@@ -14,7 +14,7 @@ clone_folder: c:\ffmpeg
 build_script:
  - cd 3rdParty
  - cd FFMpeg
- - C:\msys64\usr\bin\bash -lc "./configure --toolchain=msvc"
+ - C:\msys64\usr\bin\bash -lc "c:/ffmpeg/3rdParty/ffmpeg/configure --toolchain=msvc"
  - make
  - make install
 
