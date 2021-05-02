@@ -11,6 +11,9 @@ configuration:
 
 clone_folder: c:\ffmpeg
 
+install:
+ - git submodule update --init --recursive
+
 build_script:
  - cd 3rdParty
  - cd FFMpeg
